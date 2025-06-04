@@ -27,7 +27,17 @@ namespace PetSimulator.Models
                 new Item("Bird Cage", ItemType.Bed, 20, PetStat.Sleep),
                 new Item("Fish Tank", ItemType.Bed, 15, PetStat.Sleep),
                 new Item("Rabbit Hutch", ItemType.Bed, 25, PetStat.Sleep),
-                new Item("Medicine", ItemType.Medicine, 40, PetStat.Hunger)
+                new Item("Medicine", ItemType.Medicine, 40, PetStat.Hunger),
+                new Item("Frisbee", ItemType.Toy, 35, PetStat.Fun),
+                new Item("Laser Pointer", ItemType.Toy, 30, PetStat.Fun),
+                new Item("Bird Mirror", ItemType.Toy, 25, PetStat.Fun),
+                new Item("Bubble Maker", ItemType.Toy, 20, PetStat.Fun),
+                new Item("Carrot Toy", ItemType.Toy, 30, PetStat.Fun),
+                new Item("Treat Ball", ItemType.Toy, 25, PetStat.Fun),
+                new Item("Catnip", ItemType.Toy, 35, PetStat.Fun),
+                new Item("Bird Bell", ItemType.Toy, 20, PetStat.Fun),
+                new Item("Fish Castle", ItemType.Toy, 25, PetStat.Fun),
+                new Item("Rabbit Tunnel", ItemType.Toy, 30, PetStat.Fun)
             };
         }
 

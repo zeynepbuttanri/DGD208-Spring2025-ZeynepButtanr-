@@ -95,7 +95,56 @@ namespace PetSimulator
                 foreach (var pet in pets)
                 {
                     Console.WriteLine($"\n{pet.Name} ({pet.Type})");
-                    Console.WriteLine($"Hunger: {pet.Hunger}");
+                    
+                    // Display ASCII art based on pet type
+                    switch (pet.Type)
+                    {
+                        case PetType.Dog:
+                            Console.WriteLine(@"
+    / \__
+   (    @\___
+   /         O
+  /   (_____/
+ /_____/   U");
+                            break;
+                        case PetType.Cat:
+                            Console.WriteLine(@"
+ /\_/\
+( o.o )
+ > ^ <");
+                            break;
+                        case PetType.Bird:
+                            Console.WriteLine(@"
+   /\
+  /  \
+ /    \
+(>    <)
+ \    /
+  \  /
+   \/");
+                            break;
+                        case PetType.Fish:
+                            Console.WriteLine(@"
+    /\
+   /  \
+  /    \
+ /      \
+/        \
+\        /
+ \      /
+  \    /
+   \  /
+    \/");
+                            break;
+                        case PetType.Rabbit:
+                            Console.WriteLine(@"
+ (\_/)
+( -.-)
+(> < )");
+                            break;
+                    }
+                    
+                    Console.WriteLine($"\nHunger: {pet.Hunger}");
                     Console.WriteLine($"Sleep: {pet.Sleep}");
                     Console.WriteLine($"Fun: {pet.Fun}");
                 }
